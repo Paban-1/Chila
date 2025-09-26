@@ -1,15 +1,15 @@
-import {FaStar} from 'react-icons/fa';
-function App() {
- 
+import React from "react";
+import { Hero, Navbar } from "./constants";
 
+const App = () => {
   return (
     <>
-       <h1 className="text-3xl font-bold underline">
-      Hello world!
-      <FaStar/>
-    </h1>
+      <div className="select-none">
+        <Navbar />
+        <Hero />
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
